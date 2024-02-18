@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .35s ease-in-out;
+    /* border: 1px solid black; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+a{
+    text-decoration: none   ;
+}
+.bi{
+    color: white;
+}
+#display{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2ad7;
+}
+#display p{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+/* 
+    Categories
+*/
+#categories{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 10px 50px 10px;
+}
+#categories ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#categories ul li{
+    width: max-content;
+    height: max-content;
+    margin: 20px;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#categories ul li:hover{
+    background-color: rgb(20, 20, 20);
+    color: white;
+
+}
+.default{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#gallery-photos{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 0px 100px 0px;
+}
+.image{
+    width: 300px;
+    height: 270px;
+    background-color: red;
+    margin: 20px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 
+    Specials
+*/
+#specials{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(216, 214, 214);
+}
+#specials form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#specials form label{
+    font-family: Courgette;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(65, 63, 63);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin: 0px 20px 0px 0px;
+}
+#specials form .form-input{
+    width: 250px;
+    height: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.form-input .bi{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    translate: -30%, 0;
+    color: #757474;
+    font-family: monospace;
+}
+.form-input input{
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    touch-action: manipulation;
+}
+
+.form-input input:focus{
+    background-color: rgb(255, 255, 255);
+}
+.form-input input :valid{
+    color: greenyellow;
+}
+
+#specials form button{
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    margin: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 6px;
+    background-color: #222222;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}
+/* 
+    -----------------------------------------
+                Back to Top button
+    -----------------------------------------
+*/
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00000080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+#backToTopBtn:hover {
+    background-color: #000000c2;
+} 

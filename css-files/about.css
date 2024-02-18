@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .35s ease-in-out;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+a{
+    text-decoration: none   ;
+}
+.bi{
+    color: white;
+}
+/* 
+    Display
+*/
+#display{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2ad7;
+}
+#display p{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+}
+/* 
+    About
+*/
+#about{
+    width: 100%;
+    height: max-content;
+    padding: 100px 20px 150px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+#about :nth-child(1){
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: red;
+}
+#about :nth-child(2){
+    font-size: 55px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    line-height: 1;
+    margin: 0 0 30px 0;
+}
+#about :nth-child(3){
+    max-width: 700px;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+/* 
+    Video
+*/
+#video{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(36, 35, 35, 0.795);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#video :nth-child(1){
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: red;
+}
+#video :nth-child(2){
+    font-size: 55px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    margin: 0 0 20px 0;
+}
+#video p .bi{
+    font-size: 50px;
+    color: white;
+}
+/* 
+    Details
+*/
+#detail{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 150px 0 ;
+}
+.detail-cont{
+    width: 90%;
+    height: max-content;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.detail-cont .detail-image{
+    width: 460px;
+    height: 370px;
+    border-radius: 15px;
+    background-color: blue;
+    margin: 30px;
+}
+.detail-cont .detail-info{
+    max-width: 350px;
+    min-width: 200px;
+    text-align: center;
+    height: max-content;
+
+}
+.detail-info :nth-child(1){
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: red;
+}
+.detail-info :nth-child(2){
+    font-size: 55px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    margin: 0 0 20px 0;
+}
+.detail-info :nth-child(3){
+    font-size: 15px;
+    font-family: Montserrat;
+    color: rgb(0, 0, 0);
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+.cont-1 .detail-image{
+    margin: 0 150px 0 0;
+}
+.cont-1 .detail-info{
+    text-align: center;
+}
+
+.cont-2 .detail-image{
+    margin: 0 0 0 150px;
+}
+.cont-2 .detail-info{
+    text-align: center;
+}
+
+
+/* 
+    Chefs
+*/
+
+#chefs-section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 100px 10px;
+}
+.chef-header{
+    margin: 50px 50px 100px 50px;
+}
+.chef-header :nth-child(1){
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: rgb(255, 0, 0);
+}
+.chef-header :nth-child(2){
+    font-size: 55px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    margin: 0 0 20px 0;
+}
+.chef-info{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chef-profile{
+    position: relative;
+    width: 400px;
+    height: 370px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    border: 2px solid #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chef-profile .chef-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 3px solid red;
+    text-align: center;
+}
+.chef-bio{
+    width: 250px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.chef-bio :nth-child(1){
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 10px 5px 10px;
+}
+.chef-bio :nth-child(2){
+    font-weight: 200;
+    font-family: poppins;
+    font-size: 20px;
+    margin: 0px 10px 10px 10px;
+    text-transform: uppercase;
+}
+.chef-bio :nth-child(1){
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+
+
+/* 
+    Specials
+*/
+#specials{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(216, 214, 214);
+}
+#specials form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#specials form label{
+    font-family: Courgette;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(65, 63, 63);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin: 0px 20px 0px 0px;
+}
+#specials form .form-input{
+    width: 250px;
+    height: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.form-input .bi{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    translate: -30%, 0;
+    color: #757474;
+    font-family: monospace;
+}
+.form-input input{
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    touch-action: manipulation;
+}
+
+.form-input input:focus{
+    background-color: rgb(255, 255, 255);
+}
+.form-input input :valid{
+    color: greenyellow;
+}
+
+#specials form button{
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    margin: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 6px;
+    background-color: #222222;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}

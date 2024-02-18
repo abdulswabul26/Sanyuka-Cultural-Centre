@@ -1,0 +1,53 @@
+.inline-navbar{
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0); /* Initially transparent background */ 
+    backdrop-filter: blur(0px);   
+    transition: background-color 0.5s ease; /* Smooth transition effect */
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+.inline-navbar .logo{
+    max-width: 10rem;
+    min-width: 7rem;
+    height: 50px;
+    border: 1px solid black;
+}
+.inline-navbar ul{
+    max-width: max-content;
+    min-width: max-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+}
+.inline-navbar ul li{
+    margin: 10px;
+    padding: 5px;
+}
+.inline-navbar ul li:hover{
+    transition: 2ms ease-in-out;
+
+}
+.inline-navbar ul li a{
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    font-size: 1em;
+    color:white;
+}
+.inline-navbar ul li a:hover{
+    color: rgb(252, 205, 87);
+}
+
+.inline-navbar .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .icons{
+    margin: 10px;
+}

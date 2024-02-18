@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Css link tag(s) -->
+    <link rel="stylesheet" href="./css-files/index.css">
+    <link rel="stylesheet" href="./css-files/main-navbar.css">
+    <link rel="stylesheet" href="./css-files/footer-css.css">
+
+    <!-- Icons link tag-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!--  Javascript link tag -->
+    <script src="./js-files/index.js"></script>
+
+    <!-- Jquery link tag -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+</head>
+<body>
+    <!--
+        The behind background of the website
+    -->
+    <div id="background"></div>
+    <!--
+        Slideshow section
+    -->
+    <div id="slideshow-container">
+
+        <!------------    inline Navbar     --------------->
+        <nav class="inline-navbar">
+            <div class="logo"></div>
+            <ul>
+                <li><a href="./index.html" class="li-1">Home</a></li>
+                <li><a href="./about.html" class="li-2">About</a></li>
+                <li><a href="./menu.html" class="li-3">Menu</a></li>
+                <li><a href="./gallery.html" class="li-4">Gallery</a></li>
+                <li><a href="./reservation.html" class="li-5">Reservation</a></li>
+            </ul>
+            <div class="contact">
+                <div class="icons"><a href="mailto:sanyukacc2022@gamil.com"><i class="bi bi-envelope-fill"></i></a></div>
+                <div class="icons"><a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a></div>
+                <div class="icons"><a href="https://wa.me/1234567890" target="_blank"><i class="bi bi-whatsapp"></i></a></div>
+                <div class="icons"><i class="bi bi-three-dots-vertical"></i></div>
+            </div>
+        </nav>
+    </div>
+
+    <!--
+        About section
+    -->
+    <div id="about-container">
+        <div class="about-illustration">
+            <div class="imge1"></div>
+            <div class="imge2"></div>
+            <div class="imge3"></div>
+        </div>
+        
+        <div class="about-info">
+            <p class="p-1">Uganda Restaurant</p>
+            <p class="p-2">Welcome</p>
+            <p class="p-3">
+                Welcome to Sanyuka Cultural Centre! Enjoy culinary artistry in a cozy atmosphere with a diverse, passionately crafted menu. From appetizers to desserts, our commitment to quality ensures an unforgettable dining experience where every meal tells a story of mastery.
+            </p>
+            <a href="#">
+                Our Story
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+        </div>
+        
+    </div>
+
+ <!--
+        SERVICES SECTION
+    -->
+
+
+    <div id="services-container">
+        <div class="services-header">
+            <p>Our Services</p>
+        </div>
+        <div class="services-cont">
+            <div class="services-info parties">
+                <div class="services-image"></div>
+                <p class="services-info-title">Meals</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda quos sed facer</p>
+            </div>
+            <div class="services-info parties">
+                <div class="services-image"></div>
+                <p class="services-info-title">Parties</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda quos sed facer</p>
+            </div>
+            <div class="services-info meetings">
+                <div class="services-image"></div>
+                <p class="services-info-title">Meetings</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda quos sed facer</p>
+            </div>
+            <div class="services-info catering">
+                <div class="services-image"></div>
+                <p class="services-info-title">Catering</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda quos sed facer</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--
+        Advert I Section
+    -->
+    <div id="advert-1">
+        <div class="advert-1-info">
+            Sanyuka Cultural Centre
+        </div>
+    </div>
+    <!--
+       --------------------   Menu Section------------------------
+    -->
+
+
+
+    <div id="menu-container">
+        <div class="menu-header">
+            <p>Our Meals</p>
+        </div>
+        <div class="menu-categories">
+            <ul>
+                <li><a href="./menu.html"><p>Lunch</p></a></li>
+                <li><a href="./menu.html"><p>Lunch</p></a></li>
+                <li><a href="./menu.html"><p>Lunch</p></a></li>
+                <li><a href="./menu.html"><p>Lunch</p></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--
+        Booking Section
+    -->
+    <div id="reservation-container">
+        <div class="reservation-image"></div>
+        <div class="reservation-info">
+            <p class="reservation-t1">Reservation</p>
+            <p class="reservation-t2">Book Table</p>
+            <form action="post">
+                <ul>
+                    <li>
+                        <label>Name</label>
+                        <input type="text" class="input" maxlength="50" required>
+                    </li>
+                    <li>
+                        <label>Date</label>
+                        <input type="date" class="input" required>
+                    </li>
+                    <li>
+                        <label>Phone</label>
+                        <input type="text" class="input" maxlength="15" required>
+                    </li>
+                    <li>
+                        <label>Time</label>
+                        <input type="time" class="input" required>
+                    </li>
+                    <li>
+                        <label>Email</label>
+                        <input type="text" class="input" required>
+                    </li>
+                    <li>
+                        <label>People</label>
+                        <select class="input">
+                            <option value="">1 Person</option>
+                            <option value="">2 People</option>
+                            <option value="">3 People</option>
+                            <option value="">4 People</option>
+                            <option value="">5 People</option>
+                            <option value="">6 People</option>
+                        </select>
+                    </li>
+                </ul>
+                <button>Book Table</button>
+            </form>
+        </div>
+        
+    </div>
+        <!--
+            Advert II Section
+        -->
+    <div id="advert-container-2">
+        <p class="ad-info-1">Discover</p>
+        <p class="ad-info-2">Our Video</p>
+        <p class="ad-info-3"><i class="bi bi-play-circle-fill"></i></p>
+    </div>
+
+    <!--
+        Specials Section
+    -->
+    <div id="specials">
+        <form>
+            <label> specials signup</label>
+            <div class="form-input">
+                <input type="email" name="email_address" placeholder="Email Address">
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+            
+            <button>Signup</button>
+        </form>
+        
+    </div>
+    <!--
+        Footer Section
+    -->
+    <footer>
+        <div id="footer-container">
+            <div id="footer-1">
+
+
+                <div class="contact">
+                    <p class="contact-title t1">Contact Us</p>
+                    <p class="cont-txt"><i class="bi bi-pin-map-fill"></i> &nbsp;Wankaati Gardens, Kabaka's Palace, Kampala, Uganda</p>
+                    <p class="cont-txt"><i class="bi bi-telephone-fill"></i>&nbsp; (+256) 759725905</p>
+                    <p class="cont-txt"><i class="bi bi-whatsapp"></i>&nbsp;(+256) 709049355</p>
+                    <p class="cont-txt"><i class="bi bi-envelope-fill"></i>&nbsp;sanyukacc2022@gmail.com</p>
+                    <p class="contact-title t2">Opening Times </p>
+                    <p class="cont-txt">09:30 AM – 11:00 PM</p>
+                    <p class="cont-txt">Every Day</p>
+                </div> 
+
+
+                <div class="posts">
+                    <p class="contact-title t3">Latest Tweets</p>
+
+                    <p class="tweet-title" color><i class="bi bi-twitter-x"></i>&nbsp; &nbsp;@tw_donbrilliant</p>
+                    <p class="tweet-info">Have you traveled Uganda well and took time to get to know the culture in each region.</p>
+                    <p class="tweet-date">24 Nov 2022</p>
+
+                    <p class="tweet-title"><i class="bi bi-twitter-x"></i>&nbsp; &nbsp;@TourBugandaUG</p>
+                    <p class="tweet-info">A place with a serene, quiet and incredible ambiencein an Eco friendly environment, this is the perfect place to be around in town.</p>
+                    <p class="tweet-date">20 Oct 2022</p>
+
+                    
+                </div>
+
+
+                <div class="gallery">
+                    <p class="contact-title t4">Gallery</p>
+                        <div class="item-footer-gallery-cont">
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                            <div class="item-footer-gallery"></div>
+                        </div>
+                        
+                </div>
+
+            </div>
+            <div id="footer-2">
+                <div class="contact">
+                    <div class="icons"><a href="mailto:sanyukacc2022@gamil.com"><i class="bi bi-envelope-fill"></i></a></div>
+                    <div class="icons"><a href="http://" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                    <div class="icons"><a href="https://wa.me/1234567890"><i class="bi bi-whatsapp"></i></a></div>
+                </div>
+                <p>Copyright © 2022 All rights reserved | Designed by <a href="https://wa.me/+256744305753">Polar</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Back To Top Button -->
+    <button id="backToTopBtn"><i class="bi bi-chevron-double-up"></i></button>
+</body>
+</html>

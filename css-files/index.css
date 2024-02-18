@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .35s ease-in-out;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+a{
+    text-decoration: none   ;
+}
+.bi{
+    color: white;
+}
+
+#slideshow-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgb(87, 87, 87);
+}
+
+/* 
+    -----------------------------------------
+                Big Screen Navigation Bar
+    -----------------------------------------
+*/
+
+/* 
+    -----------------------------------------
+                ABOUT
+    -----------------------------------------
+*/
+
+#about-container{
+    width: 100%;
+    padding: 100px 0;
+    height: max-content;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#about-container .about-info{
+    max-width: 500px;
+    min-width: 20%;
+    height: max-content;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
+.about-info .p-1{
+    color: rgba(224, 191, 2, 0.938);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.about-info .p-2{
+    color: rgb(0, 0, 0);
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: roboto;
+    margin: 0px 0px 10px 0px;
+}
+.about-info .p-3{
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    margin: 0px 0px 10px 0px;
+    font-family: Montserrat;
+}
+.about-info a{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#about-container .about-illustration{
+    max-width: 800px;
+    min-width: 420px;
+    max-height: 500px;
+    min-height: 350px;
+    padding: 20px;
+    position: relative;
+
+}
+.about-illustration .imge1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 75%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: orange;
+}
+.about-illustration .imge2{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    translate: -50% -50%;
+    width: 32%;
+    height: 40%;
+    border-radius: 50%;
+    border: 7px solid white;
+    background-color: red;
+}
+.about-illustration .imge3{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    translate: -50% -50%;
+    width: 20%;
+    height: 25%;
+    border-radius: 50%;
+    border: 7px solid white;
+    background-color: rgb(64, 248, 8);
+}
+
+
+/* 
+    -----------------------------------------
+                ADVERT CONTAINER
+    -----------------------------------------
+*/
+#advert-1{
+    width: 100%;
+    height: 150px;
+    /* background-color: transparent; */
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+#advert-1 .advert-1-info{
+    width: max-content;
+    height: max-content;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+/* 
+    -----------------------------------------
+                SERVICES SECTION
+    -----------------------------------------
+*/
+
+
+#services-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255); 
+    padding: 70px 0px 70px 0px;
+}
+.services-cont{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.services-header{
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+
+}
+.services-header p{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    font-family: Poppins;
+}
+.services-info{
+    width: 260px;
+    height: max-content;
+    margin: 20px;
+}
+.services-image{
+    width: 100%;
+    height: 150px;
+    background: red;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+.services-info-title{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 27px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0 0 0 10px;
+
+}
+
+.services-info p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000000;
+    margin: 0px;
+    padding: 0 0 0 10px;
+
+}
+
+/*
+    --------------------------------------------
+                MENU CONTAINER 
+    --------------------------------------------
+*/
+#menu-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 0px 0px ;
+    
+}
+.menu-header{
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+.menu-header p{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Poppins;
+}
+.menu-categories{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 70px 0px;
+
+}
+.menu-categories ul{
+    list-style: none;
+    width: 95%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu-categories ul li{
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-categories ul li p{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+}
+
+/* 
+    -----------------------------------------
+                RESERVATION SECTION
+    -----------------------------------------
+*/
+/*  */
+
+#reservation-container{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 0px 0px;
+}
+.reservation-image{
+    width: 350px;
+    min-width: 350px;
+    height: 400px;
+    background: red;
+    margin: 50px;
+    border-radius: 15px;
+}
+.reservation-info{
+    width: 600px;
+    height: max-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-t1{
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+}
+.reservation-t2{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.reservation-info form{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-info form ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.reservation-info form ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+form label{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 17px;
+    color: #555555;
+
+}
+form .input{
+    width: 230px;
+    height: 46px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+form button{
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    margin: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 6px;
+    background-color: #222222;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#advert-container-2{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 255, 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#advert-container-2 .ad-info-1{
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+}
+#advert-container-2 .ad-info-2{
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+}
+
+#advert-container-2 .ad-info-3{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+#specials{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(216, 214, 214);
+}
+#specials form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#specials form label{
+    font-family: Courgette;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(65, 63, 63);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin: 0px 20px 0px 0px;
+}
+#specials form .form-input{
+    width: 250px;
+    height: max-content;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.form-input .bi{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    translate: -30%, 0;
+    color: #757474;
+    font-family: monospace;
+}
+.form-input input{
+    width: 85%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    touch-action: manipulation;
+}
+
+.form-input input:focus{
+    background-color: rgb(255, 255, 255);
+}
+.form-input input :valid{
+    color: greenyellow;
+}
+
+#specials form button{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* 
+    -----------------------------------------
+                Back to Top button
+    -----------------------------------------
+*/
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00000080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+#backToTopBtn:hover {
+    background-color: #000000c2;
+} 
